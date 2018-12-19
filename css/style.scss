@@ -32,12 +32,29 @@ body {
 }
 
 section {
+  padding: $bigSpace;
   text-align: center;
 }
 
 h1 {
   font-size: 40px;
   font-weight: normal;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: normal;
+  margin-bottom: $normalSpace;
+  span {
+    background: linear-gradient(transparent 60%, #F29364 60%);
+  }
+}
+
+h3 {
+  font-size: 15px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 
 li {
@@ -52,6 +69,14 @@ a {
 #wrapper {
   width: 1020px;
   margin: 0 auto;
+}
+
+.btn {
+  color: #fff;
+  width: 180px;
+  padding: 16px 0;
+  text-align: center;
+  background: #F29364;
 }
 
 // Header
@@ -69,6 +94,7 @@ header {
 // section#main
 #main {
   text-align: left;
+  padding: 0;
   .intro {
     padding: $bigSpace;
   }
@@ -100,5 +126,80 @@ header {
       width: 60px;
       height: 80px;
     }
+  }
+}
+
+// section#about
+#about {
+  padding: 100px 0;
+  background: #f0f0f0;
+  border: 20px solid #F29364;
+  .bio {
+    display: flex;
+  }
+  .aboutImg {
+    margin-right: $normalSpace;
+  }
+  .aboutSkill {
+    text-align: left;
+    line-height: 1.7;
+    li {
+      width: 19%;
+      display: inline-block;
+      .skill {
+        display: block;
+      }
+      .numbers {
+        width: 12px;
+        height: 12px;
+        background: #d8d8d8;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .numbers.better {
+        background: #666666;
+      }
+    }
+  }
+}
+
+// section#works
+.tag {
+  color: #ababab;
+  background: #f0f0f0;
+  padding: 5px 10px;
+}
+
+.tag + .tag {
+  margin-left: 15px;
+}
+
+.btn {
+  margin-right: 30px;
+  display: inline-block;
+}
+
+.works {
+  display: table;
+  .description {
+    text-align: left;
+    display: table-cell;
+    .ttl {
+      font-size: 40px;
+      color: #F29364;
+      margin-bottom: 60px;
+    }
+    .detail {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      line-height: 1.7;
+    }
+  }
+  .odd .discription {
+    padding-right: 30px;
+  }
+  .thumbnail {
+    display: table-cell;
+    vertical-align: middle;
   }
 }
