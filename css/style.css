@@ -156,10 +156,13 @@ header {
       margin-top: 60px;
       margin-bottom: 60px;
       line-height: 1.7; }
-  .works .odd .description {
-    padding-right: 30px; }
   .works .thumbnail {
     display: table-cell;
     vertical-align: middle; }
+  .works .works.odd .description {
+    padding-right: 30px; }
+
+.works + .works {
+  margin-top: 60px; }
 
 /*# sourceMappingURL=style.css.map */

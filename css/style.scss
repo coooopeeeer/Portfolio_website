@@ -187,19 +187,25 @@ header {
     .ttl {
       font-size: 40px;
       color: #F29364;
-      margin-bottom: 60px;
+      margin-bottom: $normalSpace;
     }
     .detail {
-      margin-top: 60px;
-      margin-bottom: 60px;
+      margin-top: $normalSpace;
+      margin-bottom: $normalSpace;
       line-height: 1.7;
     }
   }
-  .odd .description {
-    padding-right: 30px;
-  }
+  
   .thumbnail {
     display: table-cell;
     vertical-align: middle;
   }
+  
+.works.odd .description {
+    padding-right: 30px;
+  }
+}
+
+.works + .works {
+  margin-top: $normalSpace;
 }
