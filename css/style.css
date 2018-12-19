@@ -25,6 +25,10 @@ body {
 section {
   text-align: center; }
 
+h1 {
+  font-size: 40px;
+  font-weight: normal; }
+
 li {
   list-style-type: none; }
 
@@ -37,7 +41,7 @@ a {
   margin: 0 auto; }
 
 header {
-  padding: 60px 0; }
+  padding-top: 60px; }
   header ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -47,5 +51,34 @@ header {
             justify-content: flex-end; }
     header ul li + li {
       margin-left: 30px; }
+
+#main {
+  text-align: left; }
+  #main .intro {
+    padding: 120px 0; }
+  #main .fa-hand-paper {
+    color: #FFC580; }
+  #main strong {
+    font-size: 60px; }
+  #main ul {
+    margin-top: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    #main ul li + li {
+      margin-left: 30px; }
+    #main ul svg {
+      color: #fff;
+      width: 26px;
+      height: 26px;
+      padding: 11px;
+      background: #F29364;
+      border-radius: 50%; }
+  #main .toDown {
+    text-align: center;
+    display: block; }
+    #main .toDown svg {
+      width: 60px;
+      height: 80px; }
 
 /*# sourceMappingURL=style.css.map */
