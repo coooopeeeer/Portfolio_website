@@ -46,6 +46,7 @@ h2 {
   font-weight: normal;
   margin-bottom: $normalSpace;
   span {
+    padding: 0 10px;
     background: linear-gradient(transparent 60%, #F29364 60%);
   }
 }
@@ -174,11 +175,6 @@ header {
   margin-left: 15px;
 }
 
-.btn {
-  margin-right: 30px;
-  display: inline-block;
-}
-
 .works {
   display: table;
   .description {
@@ -194,18 +190,65 @@ header {
       margin-bottom: $normalSpace;
       line-height: 1.7;
     }
+    .btns {
+      display: flex;
+    }
+    .btn {
+      margin-right: 30px;
+    }
   }
-  
   .thumbnail {
     display: table-cell;
     vertical-align: middle;
   }
-  
-.works.odd .description {
-    padding-right: 30px;
-  }
+}
+
+.works.odd .description,
+.works.even .thumbnail {
+  padding-right: 30px;
+}
+
+.works.odd .thumbnail,
+.works.even .description {
+  padding-left: 30px;
 }
 
 .works + .works {
   margin-top: $normalSpace;
+}
+
+// section#contact
+#contact {
+  padding-top: 0;
+  padding-bottom: $normalSpace;
+  p {
+    line-height: 1.7;
+  }
+  .btn {
+    display: block;
+    margin: 60px auto;
+  }
+  ul {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  li + li {
+    margin-left: 30px;
+  }
+  svg {
+    color: #F29364;
+    width: 26px;
+    height: 26px;
+    padding: 9px;
+    background: #fff;
+    border: 2px solid #F29364;
+    border-radius: 50%;
+  }
+}
+
+// footer
+footer {
+  text-align: center;
+  padding-bottom: 60px;
 }
