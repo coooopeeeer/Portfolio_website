@@ -17,9 +17,6 @@ span {
   margin: 0;
   padding: 0; }
 
-html {
-  scroll-behavior: smooth; }
-
 body {
   font-size: 15px;
   font-family: "Avenir Next", Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, Osaka, sans-serif;
@@ -231,5 +228,4 @@ header {
 footer {
   text-align: center;
   padding-bottom: 60px; }
-
 /*# sourceMappingURL=style.css.map */
