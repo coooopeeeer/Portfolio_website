@@ -198,6 +198,8 @@ header {
   .works .thumbnail {
     display: table-cell;
     vertical-align: middle; }
+    .works .thumbnail img {
+      width: 480px; }
 
 .works.odd .description,
 .works.even .thumbnail {

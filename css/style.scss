@@ -252,6 +252,9 @@ header {
   .thumbnail {
     display: table-cell;
     vertical-align: middle;
+    img {
+      width: 480px;
+    }
   }
 }
 
